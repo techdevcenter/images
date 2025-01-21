@@ -29,4 +29,5 @@ jobs:
         with:
           context: ./node
           push: true
-          tags: latest
+          tags: |
+            ${{ secrets.DOCKER_USERNAME }}/node:latest
